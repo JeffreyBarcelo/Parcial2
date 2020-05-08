@@ -1,0 +1,2 @@
+rootProject.name='formativa_2'
+include ':app'

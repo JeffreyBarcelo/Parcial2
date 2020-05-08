@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Eliminar">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingresa el ID del dato que deseas eliminar"
+        android:textSize="30sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtIdEliminar"
+        android:hint=""/>
+    <Button
+        android:id="@+id/btnEliminar"
+        android:layout_width="345dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="31dp"
+        android:text="Eliminar"
+        />
+
+    <Button
+        android:id="@+id/btnAtras"
+        android:layout_width="345dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="11dp"
+        android:text="Ver lista"
+        />
+
+</LinearLayout>

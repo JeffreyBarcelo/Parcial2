@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">formativa_2</string>
+
+    <string name="txt_name">NOMBRE</string>
+    <string name="txt_documento">IDENTIFICACION</string>
+    <string name="txt_apto">APARTAMENTO</string>
+    <string name="txt_tipo">TIPO DE VISITA</string>
+    <string name="txt_fecha">FECHA</string>
+    <string name="btn_guardar">GUARDAR</string>
+    <string name="btn_lista">LISTAR</string>
+    <string name="btn_modificar">MODIFICAR</string>
+
+
+    <string-array name="spinner_items">
+
+    <item>1</item>
+    <item>2</item>
+    <item>3</item>
+    <item>4</item>
+    <item>5</item>
+    <item>6</item>
+
+
+    </string-array>
+
+    <string-array name="spinner_items_nivel">
+
+        <item>Bachillerato</item>
+        <item>Pregado</item>
+        <item>Maestria</item>
+        <item>Doctorado</item>
+
+
+
+    </string-array>
+</resources>

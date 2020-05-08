@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-41dp"
+        tools:layout_editor_absoluteY="0dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+            <EditText
+
+                android:id="@+id/edtBuscar"
+                android:layout_width="245dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="11dp"
+                android:ems="10"
+                app:layout_constraintStart_toStartOf="parent">
+
+
+            </EditText>
+
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BUSCAR"/>
+</LinearLayout>
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="345dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="60dp"
+                android:text="@string/txt_name"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.484"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtBuscar"/>
+
+            <EditText
+                android:id="@+id/txt_name"
+                android:layout_width="345dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="11dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="345dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="11dp"
+                android:text="@string/txt_documento"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_name" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="345dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="11dp"
+                android:text="ESTRATO"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_id" />
+
+            <Spinner
+                android:id="@+id/txt_apto"
+                android:layout_width="345dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="11dp"
+                android:ems="10"
+                android:entries="@array/spinner_items"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <TextView
+                android:id="@+id/fecha_ingreso"
+                android:layout_width="345dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="11dp"
+                android:text="SALARIO"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_apto" />
+
+            <EditText
+                android:id="@+id/edtFecha"
+                android:layout_width="345dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="11dp"
+                android:ems="10"
+                android:inputType="number"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fecha_ingreso" />
+
+            <TextView
+                android:id="@+id/hora_ingreso"
+                android:layout_width="345dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="11dp"
+                android:text="NIVEL EDUCATIVO"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtFecha" />
+
+            <Spinner
+                android:id="@+id/edtHora"
+                android:layout_width="345dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="11dp"
+                android:ems="10"
+                android:entries="@array/spinner_items_nivel"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hora_ingreso" />
+
+            <Button
+                android:id="@+id/btn_eliminar"
+                android:layout_width="345dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="31dp"
+                android:text="ELIMINAR"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.484"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_guardar"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/btn_actualizar"
+                android:layout_width="345dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="31dp"
+                android:text="Actualizar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.484"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_eliminar"
+                tools:ignore="MissingConstraints" />
+            <Button
+                android:id="@+id/btn_guardar"
+                android:layout_width="345dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="31dp"
+                android:text="@string/btn_guardar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.484"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtHora"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/btn_lista"
+                android:layout_width="345dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="11dp"
+                android:text="@string/btn_lista"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.493"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_guardar" />
+
+            <EditText
+                android:id="@+id/txt_id"
+                android:layout_width="345dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="11dp"
+                android:ems="10"
+                android:inputType="phone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

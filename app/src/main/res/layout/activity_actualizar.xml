@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+
+    >
+
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtNombree"
+        android:hint="Ingresa el nombre"/>
+
+
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtIdd"
+        android:inputType="phone"
+        android:hint="Ingresa la identificacion"/>
+
+
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtApartamentoo"
+        android:hint="Ingresa numero del apartamento"/>
+
+
+
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtFechaa"
+        android:hint="Ingresa la fecha"
+        android:inputType="date"
+        android:clickable="true"
+        android:focusable="false"/>
+
+
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtHoraa"
+        android:clickable="true"
+        android:focusable="false"
+        android:hint="Ingresa la hora"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="345dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="11dp"
+        android:text="@string/txt_tipo"
+        android:textSize="18sp"
+        />
+
+    <RadioGroup
+        android:id="@+id/radioGroupp"
+        android:layout_width="338dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="8dp"
+        >
+
+        <RadioButton
+            android:id="@+id/radioButtonn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Familia"
+            />
+
+        <RadioButton
+            android:id="@+id/radioButtonn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amigos"
+            />
+
+        <RadioButton
+            android:id="@+id/radioButtonn3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Domicilio"
+            />
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/btnActualizar"
+        android:layout_width="345dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="31dp"
+        android:text="Actualizar"
+         />
+
+    <Button
+        android:id="@+id/btnAtras"
+        android:layout_width="345dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="11dp"
+        android:text="Ver lista"
+         />
+
+</LinearLayout>
